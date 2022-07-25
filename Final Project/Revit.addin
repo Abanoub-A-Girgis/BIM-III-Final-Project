@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<RevitAddIns>
+
+<AddIn Type="Application">
+	<Name>BIM Scheduling to CSV</Name>
+	<Assembly>Final Project.dll</Assembly>
+	<AddInId>0FEFCEC4-D6AB-476A-B8B1-4E7ED22C8909</AddInId>
+	<FullClassName>Ribbon.Ribbon</FullClassName>
+	<Text>BIM Scheduling to CSV</Text>
+	<Description>Exports all Revit Scheduling CSV Sheet</Description>
+	<VendorId>Abanoub</VendorId>
+	<VendorDescription>Abanoub Girgis</VendorDescription>
+	<VisibilityMode>NotVisibleWhenNoActiveDocument</VisibilityMode>
+</AddIn>
+
+</RevitAddIns>
