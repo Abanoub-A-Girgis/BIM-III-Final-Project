@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Application">
+    <Name>Documentation Automation</Name>
+    <Assembly>RevitDocumentationAutomation.dll</Assembly>
+    <AddInId>0FEFCEC4-D6AB-476A-B8B1-4E7ED22C8909</AddInId>
+    <FullClassName>RevitDocumentationAutomation.App</FullClassName>
+    <Text>Documentation Automation</Text>
+    <Description>Automates Revit schedule creation, model auditing, and schedule data exchange.</Description>
+    <VendorId>AGIR</VendorId>
+    <VendorDescription>Abanoub Girgis</VendorDescription>
+  </AddIn>
+</RevitAddIns>

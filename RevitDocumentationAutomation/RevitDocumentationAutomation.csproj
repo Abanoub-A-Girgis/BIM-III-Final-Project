@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <RootNamespace>RevitDocumentationAutomation</RootNamespace>
+    <AssemblyName>RevitDocumentationAutomation</AssemblyName>
+    <Platforms>AnyCPU;x64</Platforms>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <Nullable>disable</Nullable>
+    <RevitVersion Condition="'$(RevitVersion)' == ''">2021</RevitVersion>
+    <RevitApiPath Condition="'$(RevitApiPath)' == ''">$(ProgramW6432)\Autodesk\Revit $(RevitVersion)</RevitApiPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="RevitAPI"><HintPath>$(RevitApiPath)\RevitAPI.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="RevitAPIUI"><HintPath>$(RevitApiPath)\RevitAPIUI.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="ClosedXML" Version="0.95.4" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="RevitDocumentationAutomation.addin" CopyToOutputDirectory="PreserveNewest" />
+    <None Update="Samples\RevitScheduleConfiguration.xlsx" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+</Project>

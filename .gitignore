@@ -29,6 +29,13 @@ x86/
 bld/
 [Bb]in/
 [Oo]bj/
+.vs/
+artifacts/
+local-revit-api/
+Exports/
+Logs/
+*.journal
+*.jrn
 [Oo]ut/
 [Ll]og/
 [Ll]ogs/
